@@ -1,0 +1,16 @@
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\bin\Debug\RETRO_Plugin_Command_UI.exe.config
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\bin\Debug\RETRO_Plugin_Command_UI.exe
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\bin\Debug\RETRO_Plugin_Command_UI.pdb
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\bin\Debug\RETRO_Plugin_Command_UI.xml
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.frmArgument.resources
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.frmArray.resources
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.frmCredits.resources
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.frmMain.resources
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.frmProjects.resources
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.frmStruct.resources
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.Resources.resources
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.vbproj.GenerateResource.cache
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.vbproj.CoreCompileInputs.cache
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.exe
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.xml
+E:\Users\marko\Documents\Games\Demos\RETRO\RETRO_Plugin_Command_UI\obj\Debug\RETRO_Plugin_Command_UI.pdb
