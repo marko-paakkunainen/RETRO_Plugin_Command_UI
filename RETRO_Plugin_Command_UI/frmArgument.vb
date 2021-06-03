@@ -17,11 +17,15 @@
     Private Sub butOK_Click(sender As Object, e As EventArgs) Handles butOK.Click
 
         If cmbValue.Visible Then
-            For Each kvp In ArgOptions
-                If kvp.Key = cmbValue.Text Then
-                    LvwItem.SubItems(2).Text = kvp.Value
-                End If
-            Next
+            If Me.ArgType = "combo" Then
+                LvwItem.SubItems(2).Text = cmbValue.Text
+            Else
+                For Each kvp In ArgOptions
+                    If kvp.Key = cmbValue.Text Then
+                        LvwItem.SubItems(2).Text = kvp.Value
+                    End If
+                Next
+            End If
         ElseIf chkOFF.Visible Then
             If chkOFF.Checked Then
                 LvwItem.SubItems(2).Text = "false"

@@ -230,13 +230,17 @@
             End If ' End at next: @command / @param / @help
             Dim rexArgs As New System.Text.RegularExpressions.Regex("\*[ ]*?\@command[ ]*?" & c & "(.*?)\@[pch]", System.Text.RegularExpressions.RegexOptions.Singleline)
             matches = rexArgs.Matches(strFileCont)
-            If InStr(matches(0).Value, "@arg") > 0 Then
-                Dim rawArgs As String() = Split(matches(0).Value, "@arg")
-                Dim lstArgs = New List(Of ARGS)
-                For i = 1 To rawArgs.Length - 1
-                    lstArgs.Add(ParseARG(rawArgs(i)))
-                Next
-                obj.Arguments = lstArgs
+            If matches.Count > 0 Then
+                If InStr(matches(0).Value, "@arg") > 0 Then
+                    Dim rawArgs As String() = Split(matches(0).Value, "@arg")
+                    Dim lstArgs = New List(Of ARGS)
+                    For i = 1 To rawArgs.Length - 1
+                        lstArgs.Add(ParseARG(rawArgs(i)))
+                    Next
+                    obj.Arguments = lstArgs
+                Else
+                    obj.Arguments = New List(Of ARGS)
+                End If
             Else
                 obj.Arguments = New List(Of ARGS)
             End If
@@ -286,8 +290,10 @@
         If lstArguments.Items.Count > 0 Then
             For Each itm As ListViewItem In lstArguments.Items
                 Select Case LCase(itm.SubItems(1).Text)
-                    Case "text", "string"
-                        If InStr(itm.SubItems(2).Text, " ") > 0 Or Trim(itm.SubItems(2).Text) = "" Then
+                    Case "text", "string", "file"
+                        If Trim(itm.SubItems(2).Text) = "" Then
+                            strArgs &= " \_" ' Empty string
+                        ElseIf InStr(itm.SubItems(2).Text, " ") > 0 Then
                             ' We got spaces... Need to wrap text to double quotes AND escape double quotes in text
                             strArgs &= " " & DqtEsc(itm.SubItems(2).Text, False)
                         Else ' No spaces here

@@ -100,6 +100,11 @@
                                     frmArg.cmbValue.SelectedIndex = frmArg.cmbValue.Items.Count - 1
                                 End If
                             Next
+                            If arg.Type = "combo" Then
+                                frmArg.cmbValue.DropDownStyle = ComboBoxStyle.DropDown
+                            Else
+                                frmArg.cmbValue.DropDownStyle = ComboBoxStyle.DropDownList
+                            End If
                             frmArg.cmbValue.Visible = True
                             frmArg.txtValue.Visible = False
                         End If

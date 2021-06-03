@@ -93,4 +93,10 @@
         LoadSettings()
     End Sub
 
+    Private Sub butRemove_Click(sender As Object, e As EventArgs) Handles butRemove.Click
+        If cmbProject.Text <> "" Then
+            cmbProject.Items.RemoveAt(cmbProject.SelectedIndex)
+            If cmbProject.Items.Count > 0 Then cmbProject.SelectedIndex = cmbProject.Items.Count - 1
+        End If
+    End Sub
 End Class
