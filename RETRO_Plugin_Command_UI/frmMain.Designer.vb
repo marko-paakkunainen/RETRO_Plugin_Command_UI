@@ -211,7 +211,7 @@ Partial Class frmMain
         Me.Name = "frmMain"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "RETRO Plugin Command UI v1.0"
+        Me.Text = "RETRO Plugin Command UI v1.01"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

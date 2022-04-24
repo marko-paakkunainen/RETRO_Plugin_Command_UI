@@ -82,6 +82,9 @@
 
         If InStr(strRawArg, "@default") > 0 Then
             a.DefaultValue = Trim(Split(Split(strRawArg, "@default")(1), vbNewLine)(0))
+            If InStr(a.Type, "[]") > 0 Then
+                a.DefaultValue = Replace(a.DefaultValue, """, """, """,""")
+            End If
         Else
             a.DefaultValue = ""
         End If
